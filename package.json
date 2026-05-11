@@ -1,0 +1,12 @@
+{
+  "name": "profil_pribadi",
+  "version": "1.0.0",
+  "description": "Website profil pribadi dengan area pesan masuk dan backend sederhana.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
