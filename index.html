@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Randi Hutasoit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Randi Hutasoit</h1>
+                <ul class="nav-menu">
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keterampilan</a></li>
+                    <li><a href="#projects">Foto Saya</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2>Halo, Saya Randi Hutasoit</h2>
+                <p>Mahasiswa Teknologi Informasi</p>
+                <a href="#contact" class="btn-primary">Hubungi Saya</a>
+            </div>
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Foto Profil" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Saya Randi Hutasoit, mahasiswa Teknologi Informasi yang tertarik pada pengembangan web serta desain UI/UX. Berbekal pengalaman di bidang tersebut, saya berusaha menghadirkan solusi yang kreatif sekaligus berkualitas, dengan komitmen untuk terus berkembang dan memberikan hasil terbaik.</p>
+                    <p>Mahasiswa: IAKN TARUTUNG</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>[2012]</h3>
+                        <p>SD</p>
+                    </div>
+                    <div class="stat">
+                        <h3>[2018]</h3>
+                        <p>SMP</p>
+                    </div>
+                    <div class="stat">
+                        <h3>[2021]</h3>
+                        <p>SMA</p>
+                    </div>
+                    <div class="stat">
+                        <h3>[2024]</h3>
+                        <p>KULIAH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>KETERAMPILAN SAYA</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Memasak</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Futsal</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 45%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>MODOM</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 55%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Foto Saya">
+        <div class="container">
+            <h2>Foto Saya</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Foto di Rumah</h3>
+                    <p><a href="#" class="photo-link" data-image="foto-rumah.jpg">Link foto</a></p>
+                    <a href="#" class="btn-secondary photo-open" data-image="foto-rumah.jpg" data-title="Foto di Rumah">Lihat Detail</a>
+                </div>
+                <div class="project-card">
+                    <h3>Foto di Kampus</h3>
+                    <p><a href="#" class="photo-link" data-image="foto-kampus.jpg">Link foto</a></p>
+                    <a href="#" class="btn-secondary photo-open" data-image="foto-kampus.jpg" data-title="Foto di Kampus">Lihat Detail</a>
+                </div>
+                <div class="project-card">
+                    <h3>Foto di Dantob</h3>
+                    <p><a href="#" class="photo-link" data-image="foto-dantob.jpg">Link foto</a></p>
+                    <a href="#" class="btn-secondary photo-open" data-image="foto-dantob.jpg" data-title="Foto di Dantob">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="photo-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup">×</button>
+            <img src="" alt="Foto detail" id="modal-image">
+            <p class="modal-caption"></p>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><strong>Email:</strong> [hutasoitrandi062@gmail.com]</p>
+                    <p><strong>Telepon:</strong> [083165021602]</p>
+                    <p><strong>Instagram:</strong> [randi.hutasoit18]</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Pesan" required></textarea>
+                    <button type="submit" class="btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="inbox">
+        <div class="container">
+            <h2>Pesan Masuk</h2>
+            <div class="inbox-info">
+                <p>Pesan yang dikirim oleh pengunjung akan tampil di sini.</p>
+                <p class="inbox-status">Menunggu data pesan...</p>
+            </div>
+            <div class="message-list"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [RandiHutasoit]. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
